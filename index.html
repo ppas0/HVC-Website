@@ -3,133 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Helvetia Coin (HVC) - Die Zukunft der Schweizer Kryptowährung</title>
+    <title>Helvetia Coin (HVC) - Die Zukunft der digitalen Währung</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             margin: 0;
             padding: 0;
-            background: #f8f9fa;
+            background: #f4f4f9;
             color: #333;
         }
+
         header {
-            background: #003366;
+            background: #002147;
             color: white;
-            padding: 20px;
+            padding: 30px 20px;
             text-align: center;
-            font-size: 1.8rem;
+            font-size: 2rem;
             font-weight: bold;
+            position: relative;
         }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .language-selector select {
+            padding: 5px;
+            font-size: 1rem;
+        }
+
         nav {
-            background: #00509e;
+            background: #0056b3;
             text-align: center;
-            padding: 10px 0;
+            padding: 15px 0;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
         }
+
         nav ul li {
             display: inline;
-            margin: 0 15px;
+            margin: 0 20px;
         }
+
         nav ul li a {
             color: white;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
+            font-weight: bold;
         }
+
         .container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 60px 20px;
             text-align: center;
         }
-        .cta-button {
-            display: inline-block;
-            background: #e43f5a;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: 0.3s;
+
+        h2 {
+            color: #002147;
+            font-size: 2rem;
         }
-        .cta-button:hover {
-            background: #c9303e;
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
+
         footer {
-            background: #003366;
+            background: #002147;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 20px;
+            padding: 25px;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
     <header>
-        Helvetia Coin (HVC) - Die Zukunft der digitalen Währung
+        <span id="title">Helvetia Coin (HVC) - Die Zukunft der digitalen Währung</span>
+        <div class="language-selector">
+            <label for="language">🌍</label>
+            <select id="language">
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+            </select>
+        </div>
     </header>
     
     <nav>
         <ul>
-            <li><a href="#about">Über HVC</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#buy">HVC kaufen</a></li>
-            <li><a href="#contact">Kontakt</a></li>
+            <li><a href="#about" data-lang="nav_about">Über HVC</a></li>
+            <li><a href="#features" data-lang="nav_features">Features</a></li>
+            <li><a href="#roadmap" data-lang="nav_roadmap">Roadmap</a></li>
+            <li><a href="#contact" data-lang="nav_contact">Kontakt</a></li>
         </ul>
     </nav>
     
     <div class="container" id="about">
-        <h2>Was ist Helvetia Coin?</h2>
-        <p>Helvetia Coin (HVC) ist eine digitale Währung, die für Sicherheit, Transparenz und Innovation steht. Entwickelt auf der Binance Smart Chain, bietet sie eine schnelle und kosteneffiziente Lösung für digitale Finanztransaktionen.</p>
-        <p>Unsere Mission ist es, eine dezentrale und umweltfreundliche Kryptowährung zu schaffen, die den Bedürfnissen der modernen Wirtschaft gerecht wird. Mit HVC profitieren Sie von blitzschnellen Transaktionen, niedrigen Gebühren und höchsten Sicherheitsstandards.</p>
-        <a href="#buy" class="cta-button">Jetzt Kaufen</a>
-    </div>
-    
-    <div class="container" id="features">
-        <h2>Unsere Features</h2>
-        <ul>
-            <li>⚡ Blitzschnelle Transaktionen mit niedrigen Gebühren</li>
-            <li>🔒 Höchste Sicherheitsstandards durch fortschrittliche Blockchain-Technologie</li>
-            <li>🌍 Umweltfreundlich durch energieeffizientes Proof-of-Stake-Verfahren</li>
-            <li>💰 Staking-Möglichkeiten für passives Einkommen</li>
-            <li>📈 Transparente und nachvollziehbare Transaktionen</li>
-        </ul>
-    </div>
-    
-    <div class="container" id="roadmap">
-        <h2>Unsere Roadmap</h2>
-        <p>Wir arbeiten kontinuierlich an der Weiterentwicklung von Helvetia Coin:</p>
-        <ul>
-            <li>Q1 2025 - Einführung und Marketing-Kampagne</li>
-            <li>Q2 2025 - Listung an den führenden Krypto-Börsen</li>
-            <li>Q3 2025 - Einführung von Smart Contracts</li>
-            <li>Q4 2025 - Partnerschaften mit Finanzinstituten</li>
-        </ul>
-    </div>
-    
-    <div class="container" id="buy">
-        <h2>Jetzt HVC Kaufen</h2>
-        <p>Erhältlich auf PancakeSwap und weiteren Börsen.</p>
-        <a href="https://pancakeswap.finance/" target="_blank" class="cta-button">Jetzt kaufen</a>
-    </div>
-    
-    <div class="container" id="contact">
-        <h2>Kontakt & Community</h2>
-        <p>Bleiben Sie mit uns in Verbindung:</p>
-        <ul>
-            <li><a href="https://twitter.com/HelvetiaCoin">Twitter</a></li>
-            <li><a href="https://t.me/HelvetiaCoin">Telegram</a></li>
-            <li><a href="mailto:support@helvetiacoin.com">E-Mail: support@helvetiacoin.com</a></li>
-        </ul>
+        <h2 data-lang="about_title">Was ist Helvetia Coin?</h2>
+        <p data-lang="about_text">Helvetia Coin (HVC) ist eine innovative Kryptowährung, die auf modernster Blockchain-Technologie basiert.</p>
     </div>
     
     <footer>
         <p>&copy; 2025 Helvetia Coin | Alle Rechte vorbehalten</p>
     </footer>
+    
+    <script>
+        const translations = {
+            de: {
+                title: "Helvetia Coin (HVC) - Die Zukunft der digitalen Währung",
+                nav_about: "Über HVC",
+                nav_features: "Features",
+                nav_roadmap: "Roadmap",
+                nav_contact: "Kontakt",
+                about_title: "Was ist Helvetia Coin?",
+                about_text: "Helvetia Coin (HVC) ist eine innovative Kryptowährung, die auf modernster Blockchain-Technologie basiert."
+            },
+            en: {
+                title: "Helvetia Coin (HVC) - The Future of Digital Currency",
+                nav_about: "About HVC",
+                nav_features: "Features",
+                nav_roadmap: "Roadmap",
+                nav_contact: "Contact",
+                about_title: "What is Helvetia Coin?",
+                about_text: "Helvetia Coin (HVC) is an innovative cryptocurrency based on the latest blockchain technology."
+            }
+        };
+        
+        document.getElementById("language").addEventListener("change", function() {
+            const lang = this.value;
+            document.getElementById("title").textContent = translations[lang].title;
+            document.querySelectorAll("[data-lang]").forEach(el => {
+                el.textContent = translations[lang][el.getAttribute("data-lang")];
+            });
+        });
+    </script>
 </body>
 </html>
