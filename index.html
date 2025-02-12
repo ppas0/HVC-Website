@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helvetia Coin (HVC) - Die Zukunft der digitalen Währung</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #002147;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .language-selector {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .language-selector select {
+            padding: 5px;
+            font-size: 1rem;
+        }
+
+        nav {
+            background: #0056b3;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #002147;
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #002147;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <span id="title">Helvetia Coin (HVC) - Die Zukunft der digitalen Währung</span>
+        <div class="language-selector">
+            <label for="language">🌍</label>
+            <select id="language">
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about" data-lang="nav_about">Über HVC</a></li>
+            <li><a href="#features" data-lang="nav_features">Features</a></li>
+            <li><a href="#roadmap" data-lang="nav_roadmap">Roadmap</a></li>
+            <li><a href="#contact" data-lang="nav_contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container" id="about">
+        <h2 data-lang="about_title">Was ist Helvetia Coin?</h2>
+        <p data-lang="about_text">Helvetia Coin (HVC) ist eine innovative Kryptowährung, die auf modernster Blockchain-Technologie basiert.</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Helvetia Coin | Alle Rechte vorbehalten</p>
+    </footer>
+    
+    <script>
+        const translations = {
+            de: {
+                title: "Helvetia Coin (HVC) - Die Zukunft der digitalen Währung",
+                nav_about: "Über HVC",
+                nav_features: "Features",
+                nav_roadmap: "Roadmap",
+                nav_contact: "Kontakt",
+                about_title: "Was ist Helvetia Coin?",
+                about_text: "Helvetia Coin (HVC) ist eine innovative Kryptowährung, die auf modernster Blockchain-Technologie basiert."
+            },
+            en: {
+                title: "Helvetia Coin (HVC) - The Future of Digital Currency",
+                nav_about: "About HVC",
+                nav_features: "Features",
+                nav_roadmap: "Roadmap",
+                nav_contact: "Contact",
+                about_title: "What is Helvetia Coin?",
+                about_text: "Helvetia Coin (HVC) is an innovative cryptocurrency based on the latest blockchain technology."
+            }
+        };
+        
+        document.getElementById("language").addEventListener("change", function() {
+            const lang = this.value;
+            document.getElementById("title").textContent = translations[lang].title;
+            document.querySelectorAll("[data-lang]").forEach(el => {
+                el.textContent = translations[lang][el.getAttribute("data-lang")];
+            });
+        });
+    </script>
+</body>
+</html>
