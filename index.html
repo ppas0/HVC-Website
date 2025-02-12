@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helvetia Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+        }
+    </script>
+</head>
+<body onload="changeLanguage('de')">
+    <header>
+        <h1>Helvetia Coin</h1>
+        <select onchange="changeLanguage(this.value)">
+            <option value="de">Deutsch</option>
+            <option value="en">English</option>
+            <option value="fr">Français</option>
+            <option value="it">Italiano</option>
+            <option value="es">Español</option>
+            <option value="ru">Русский</option>
+            <option value="zh">中文</option>
+        </select>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2 class="lang lang-de">Willkommen beim Helvetia Coin</h2>
+        <p class="lang lang-de">Der Helvetia Coin verbindet Schweizer Tradition mit moderner Blockchain-Technologie.</p>
+        <img src="coin.png" alt="Helvetia Coin" class="coin-image">
+    </section>
+
+    <section id="about">
+        <h2 class="lang lang-de">Über uns</h2>
+        <p class="lang lang-de">Helvetia Coin ist eine innovative digitale Währung, inspiriert von der Schweizer Finanzwelt.</p>
+    </section>
+
+    <section id="projects">
+        <h2 class="lang lang-de">Unsere Projekte</h2>
+        <p class="lang lang-de">Wir entwickeln Lösungen für sichere Transaktionen und dezentrale Finanzen.</p>
+    </section>
+
+    <section id="contact">
+        <h2 class="lang lang-de">Kontakt</h2>
+        <p class="lang lang-de">Möchtest du mehr erfahren? Kontaktiere uns für weitere Informationen.</p>
+    </section>
+
+</body>
+</html>
