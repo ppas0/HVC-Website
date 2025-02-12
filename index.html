@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helvetia Coin (HVC)</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="translations.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 data-i18n="welcome_message">Willkommen beim Helvetia Coin</h1>
+        <div class="language-selector">
+            <label for="language">🌍 Sprache:</label>
+            <select id="language" onchange="changeLanguage(this.value)">
+                <option value="de">Deutsch</option>
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+                <option value="es">Español</option>
+                <option value="ru">Русский</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about" data-i18n="about_us">Über uns</a></li>
+            <li><a href="#features" data-i18n="features">Features</a></li>
+            <li><a href="#roadmap" data-i18n="roadmap">Roadmap</a></li>
+            <li><a href="#contact" data-i18n="contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2 data-i18n="about_hvc">Was ist Helvetia Coin?</h2>
+        <p data-i18n="about_hvc_text">Helvetia Coin (HVC) ist eine innovative Kryptowährung, die auf modernster Blockchain-Technologie basiert.</p>
+        <img src="coin.png" alt="Helvetia Coin" class="coin-image">
+    </section>
+
+    <section id="features">
+        <h2 data-i18n="features">Features</h2>
+        <ul>
+            <li data-i18n="feature1">✅ Dezentrale Blockchain</li>
+            <li data-i18n="feature2">✅ Sichere und schnelle Transaktionen</li>
+            <li data-i18n="feature3">✅ Umweltfreundliches Mining</li>
+            <li data-i18n="feature4">✅ Zukunftssichere Smart Contracts</li>
+        </ul>
+    </section>
+
+    <section id="roadmap">
+        <h2 data-i18n="roadmap">Roadmap</h2>
+        <p data-i18n="roadmap_text">Unsere Meilensteine für die kommenden Jahre:</p>
+        <ul>
+            <li data-i18n="milestone1">🚀 Q1 2025 - Token Launch</li>
+            <li data-i18n="milestone2">🌍 Q2 2025 - Börsennotierung</li>
+            <li data-i18n="milestone3">📈 Q3 2025 - Expansion in neue Märkte</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2 data-i18n="contact">Kontakt</h2>
+        <p data-i18n="contact_text">📩 Schreib uns bei Interesse oder Fragen an: <a href="mailto:info@helvetiacoin.com">info@helvetiacoin.com</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 Helvetia Coin | <span data-i18n="all_rights_reserved">Alle Rechte vorbehalten</span></p>
+    </footer>
+</body>
+</html>
