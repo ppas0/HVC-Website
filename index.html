@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meine Webseite</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function changeLanguage(lang) {
+            document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.lang-' + lang).forEach(el => el.style.display = 'block');
+        }
+    </script>
+</head>
+<body onload="changeLanguage('de')">
+    <header>
+        <h1>Willkommen auf meiner Webseite</h1>
+        <select onchange="changeLanguage(this.value)">
+            <option value="de">Deutsch</option>
+            <option value="en">Englisch</option>
+            <option value="fr">Französisch</option>
+            <option value="it">Italienisch</option>
+            <option value="es">Spanisch</option>
+            <option value="ru">Russisch</option>
+            <option value="zh">Chinesisch</option>
+        </select>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Über mich</a></li>
+            <li><a href="#projects">Projekte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2 class="lang lang-de">Startseite</h2>
+        <h2 class="lang lang-en" style="display:none;">Home</h2>
+        <h2 class="lang lang-fr" style="display:none;">Accueil</h2>
+        <h2 class="lang lang-it" style="display:none;">Home</h2>
+        <h2 class="lang lang-es" style="display:none;">Inicio</h2>
+        <h2 class="lang lang-ru" style="display:none;">Главная</h2>
+        <h2 class="lang lang-zh" style="display:none;">首页</h2>
+        <p class="lang lang-de">Hier ist der ursprüngliche Inhalt.</p>
+        <p class="lang lang-en" style="display:none;">Here is the original content.</p>
+        <p class="lang lang-fr" style="display:none;">Voici le contenu original.</p>
+        <p class="lang lang-it" style="display:none;">Ecco il contenuto originale.</p>
+        <p class="lang lang-es" style="display:none;">Aquí está el contenido original.</p>
+        <p class="lang lang-ru" style="display:none;">Вот оригинальное содержание.</p>
+        <p class="lang lang-zh" style="display:none;">这是原始内容。</p>
+        <img src="coin.jpg" alt="Coin">
+    </section>
+    <section id="about">
+        <h2 class="lang lang-de">Über mich</h2>
+        <h2 class="lang lang-en" style="display:none;">About Me</h2>
+        <h2 class="lang lang-fr" style="display:none;">À propos de moi</h2>
+        <h2 class="lang lang-it" style="display:none;">Su di me</h2>
+        <h2 class="lang lang-es" style="display:none;">Sobre mí</h2>
+        <h2 class="lang lang-ru" style="display:none;">Обо мне</h2>
+        <h2 class="lang lang-zh" style="display:none;">关于我</h2>
+        <p class="lang lang-de">Hier kannst du Informationen über dich hinzufügen.</p>
+        <p class="lang lang-en" style="display:none;">Here you can add information about yourself.</p>
+        <p class="lang lang-fr" style="display:none;">Ici, vous pouvez ajouter des informations sur vous-même.</p>
+        <p class="lang lang-it" style="display:none;">Qui puoi aggiungere informazioni su di te.</p>
+        <p class="lang lang-es" style="display:none;">Aquí puedes agregar información sobre ti.</p>
+        <p class="lang lang-ru" style="display:none;">Здесь вы можете добавить информацию о себе.</p>
+        <p class="lang lang-zh" style="display:none;">在这里你可以添加关于自己的信息。</p>
+    </section>
+    <section id="projects">
+        <h2 class="lang lang-de">Projekte</h2>
+        <h2 class="lang lang-en" style="display:none;">Projects</h2>
+        <h2 class="lang lang-fr" style="display:none;">Projets</h2>
+        <h2 class="lang lang-it" style="display:none;">Progetti</h2>
+        <h2 class="lang lang-es" style="display:none;">Proyectos</h2>
+        <h2 class="lang lang-ru" style="display:none;">Проекты</h2>
+        <h2 class="lang lang-zh" style="display:none;">项目</h2>
+        <p class="lang lang-de">Hier kannst du deine Projekte vorstellen.</p>
+        <p class="lang lang-en" style="display:none;">Here you can showcase your projects.</p>
+        <p class="lang lang-fr" style="display:none;">Ici, vous pouvez présenter vos projets.</p>
+        <p class="lang lang-it" style="display:none;">Qui puoi presentare i tuoi progetti.</p>
+        <p class="lang lang-es" style="display:none;">Aquí puedes mostrar tus proyectos.</p>
+        <p class="lang lang-ru" style="display:none;">Здесь вы можете представить свои проекты.</p>
+        <p class="lang lang-zh" style="display:none;">在这里你可以展示你的项目。</p>
+    </section>
+    <section id="contact">
+        <h2 class="lang lang-de">Kontakt</h2>
+        <h2 class="lang lang-en" style="display:none;">Contact</h2>
+        <h2 class="lang lang-fr" style="display:none;">Contact</h2>
+        <h2 class="lang lang-it" style="display:none;">Contatto</h2>
+        <h2 class="lang lang-es" style="display:none;">Contacto</h2>
+        <h2 class="lang lang-ru" style="display:none;">Контакт</h2>
+        <h2 class="lang lang-zh" style="display:none;">联系</h2>
+        <p class="lang lang-de">Hier kannst du deine Kontaktinformationen hinzufügen.</p>
+        <p class="lang lang-en" style="display:none;">Here you can add your contact information.</p>
+        <p class="lang lang-fr" style="display:none;">Ici, vous pouvez ajouter vos coordonnées.</p>
+        <p class="lang lang-it" style="display:none;">Qui puoi aggiungere le tue informazioni di contatto.</p>
+        <p class="lang lang-es" style="display:none;">Aquí puedes agregar tu información de contacto.</p>
+        <p class="lang lang-ru" style="display:none;">Здесь вы можете добавить свою контактную информацию.</p>
+        <p class="lang lang-zh" style="display:none;">在这里你可以添加你的联系信息。</p>
+    </section>
+</body>
+</html>
